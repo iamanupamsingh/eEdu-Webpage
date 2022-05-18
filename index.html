@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <title>eEdu-Made for Education</title>
+</head>
+
+<body>
+
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img id="logo" src="logo.jpg" alt="myimage"></div>
+            <li><a href="#home"> Home </a> </li>
+            <li><a href="#services"> Articles </a> </li>
+            <li><a href="#about"> About </a> </li>
+            
+            <li><a href="#contact"> Contact Us </a> </li>
+        </ul>
+        <div class="rightnav v-class-resp">
+           
+        </div>
+        <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </div>
+        
+    </nav>
+
+    <section class="background firstSection" id="home">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The Future of Education</p>
+                <p class="text-small">The digital education system revolutionized the old chalk and
+                 board process of learning in classrooms.</p>
+                <div class="buttons">
+                    <a href="https://youtu.be/NTkPfp2cXdE">
+                    <button class="btn">Watch Video</button></a>
+                </div>
+            </div>
+
+
+            <div class="secondHalf">
+                <img src="newlogo.jpg" alt="image" height="200px" width="200px"
+                    style="border: 4px solid white; border-radius: 250px;">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section-right"  id="services">
+        <div class="paras">
+        <p class="sectionTag text-big"> Let's Digitalize Education</p>
+        <p class="sectionSubTag text-small">Digital education is the innovative use of digital tools and 
+            technologies during teaching and learning, and is often referred to as Technology Enhanced
+             Learning (TEL) or e-Learning. Exploring the use of digital technologies gives educators the
+              opportunity to design engaging learning opportunities in the courses they teach, and these 
+              can take the form of blended or fully online courses and programmes.</p>
+        </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/900x900/?coding,education,digital" alt="logo" class="imgFluiud">
+            </div>
+    </section>
+
+    <hr>
+
+    <section class="section-left">
+        <div class="paras">
+        <p class="sectionTag text-big"> Expanded Learning Oportunities</p>
+        <p class="sectionSubTag text-small">One of the major advantages of digital learning is it expanded learning 
+        opportunities for students. The digital learning is extending learning opportunities so the students can grasp 
+        the fact that learning occurs various times and in several places, and digital learning will allow this varied 
+        learning opportunity. Students learn many new things from digital tools and technology.</p>
+        </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/900x900/?digital,education" alt="logo" class="imgFluiud">
+            </div>
+    </section>
+
+    <hr>
+
+    <section class="section-right">
+        <div class="paras">
+        <p class="sectionTag text-big"> Higher Engagement Rate</p>
+        <p class="sectionSubTag text-small">The traditional way of learning offers students the little scope of 
+        engagement as the dynamics of a traditional classroom comprise students, textbooks, and educators for 
+        learning. While on the other hand, the digital education system provides a wide variety of options for 
+        the students to learn from. The limitless availability of images and video content, virtual reality, 
+        interactive sessions, and many more make the digital learning method more engrossing and smooth for 
+        students to grasp.</p>
+        </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/900x900/?learning,computer" alt="logo" class="imgFluiud">
+            </div>
+    </section>
+
+
+    <div class="team-page" id="about">
+        <div class="team-section">
+        <h1 style="font-size: 50px" >About</h1>
+        <div class="border"></div>
+        
+        
+    
+        <div class="ps"> 
+            <a href="#anupam"> <img src="anupam.jpg" height="250px" width="250px"> </a> 
+    
+        </div>
+        <br> <br>
+    
+        <div class="section" id="anupam">
+        <span class="name"> Anupam Singh </span>		
+        
+        <p style="color:white;"> B.Tech CSE 2019-2023 <br>
+            Central University of Haryana <br> <br>
+        </p>
+        
+        </div>
+    </div>
+
+
+
+
+
+    <section class="contact" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your Good Name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your Phone No.">
+            <input class="form-input" type="e-mail" name="e-mail" id="email" placeholder="Enter your e-mail">
+            <textarea class="form-input" name="text" id="text" placeholder="Elaborate your Concern"></textarea>
+            <button type="button" class="btn btn-dark" onclick="saveData()">Submit</button>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-footer background">
+           eEdu-Made for Education 
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+</body>
+
+<script>
+    function saveData()
+    {let name,phone,email,text;
+        name=document.getElementById("name").value;
+        phone=document.getElementById("phone").value;
+        email=document.getElementById("email").value;
+        text=document.getElementById("text").value;
+
+        localStorage.setItem("name",name);
+        localStorage.setItem("phone",phone);
+        localStorage.setItem("email",email);
+        localStorage.setItem("text",text);
+            }
+</script>
+
+</html>
